@@ -9,10 +9,12 @@ export class AppComponent {
   title = 'hello-app';
   message = 'Hello, World';
 
+
+
   sayHello() {
-    console.warn(this.message);
-    console.error(this.message);
-    console.trace(this.message);
+    console.warn(this.message + " from " + this.title + ", print log always hit as long as called by template event bindings");
+    console.error(this.message + " from " + this.title);
+    console.trace(this.message + " from " + this.title);
     return this.message;
   }
 }
