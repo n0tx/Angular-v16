@@ -5,5 +5,8 @@ import { Injectable } from '@angular/core';
 })
 export class LoggerService {
 
-  constructor() { }
+  writeCount(count : number) {
+    console.warn(count);
+  }
+
 }
