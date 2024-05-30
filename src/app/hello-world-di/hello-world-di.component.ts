@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { LoggerService } from '../logger.service';
 
 @Component({
   selector: 'app-hello-world-di',
@@ -6,5 +7,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./hello-world-di.component.css']
 })
 export class HelloWorldDiComponent {
+  count = 0;
+  constructor(private logger: LoggerService) {}
 
+  onLogMe() {
+    this.logger.writeCount(this.count);
+    this.count++;
+  }
 }
