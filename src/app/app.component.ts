@@ -7,4 +7,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'hello-app';
+  message = 'Hello, World';
+
+  sayHello() {
+    console.warn(this.message);
+    console.error(this.message);
+    console.trace(this.message);
+    return this.message;
+  }
 }
