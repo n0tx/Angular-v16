@@ -7,4 +7,12 @@ import { Component } from '@angular/core';
 })
 export class HelloWorldBindingsComponent {
 
+  fontColor = 'green';
+  sayHelloId = 1;
+  canClick = true;
+  message = 'Hello, World';
+
+  sayMessage() {
+    alert(this.message);
+  }
 }
