@@ -8,6 +8,7 @@ import { LoggerService } from '../logger.service';
 })
 export class HelloWorldDiComponent {
   count = 0;
+  fontColor = 'red';
   constructor(private logger: LoggerService) {}
 
   onLogMe() {
